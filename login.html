@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>Takoyaki Go</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_login.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="searchBar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <section id="top-nav">
+        <div class="topnav">
+            <a class="active" href="index.html#home">Takoyaki Go</a>
+            <a href="index.html#about">About</a>
+            <a href="order.php">Menu</a>
+            <a href="index.html#promotion">Promotion</a>
+            <a href="cart.html">Cart</a>
+            <div class="search-container">
+                <form action="search.html">
+                    <input type="text" placeholder="Search.." name="search" id="searchText">
+                    <button type="button" onClick="goSearch()" id="searching"><img class="" src=""></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="empty">
+    </section>
+    
+    <!--Login Page-->
+    <section id="login">
+        <div class="login-form">
+            <form action="login.php" method="post">
+                <fieldset>
+                    <legend>LOGIN</legend>
+                    <label for="ID"></label>
+                    <input type="text" id="login-ID" name="ID" placeholder="ID">
+                    <label for="Password"></label>
+                    <input type="text" id="login-pw" name="PW" placeholder="Password">
+                    <button type="submit" id="loginbt" class="btn" >LOGIN</button>
+                    <button type="button" id="signupbt" class="btn" onclick="gotoSignup()">SIGN UP</button>
+                    
+                    <script type="text/javascript">
+                        function gotoSignup() {
+                            location.href = "signup.html";
+                        }
+                    </script>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!--Link-->
+    <section id="link">
+        <div class="container">
+            <br />
+            <br />
+            <h3>Follow us!</h3>
+            <a href="https://www.instagram.com/takoyakitogo/"><img src="img\insta.jpg" id="insta" /></a>
+        </div>
+    </section>
+
+</body>
+</html>

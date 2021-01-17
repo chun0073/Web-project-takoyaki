@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+    <title>Takoyaki Go</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_order.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="searchBar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <section id="top-nav">
+        <div class="topnav">
+            <a class="active" href="index.html">Takoyaki Go</a>
+
+            <a href="#seafood">Seafood</a>
+            <a href="#vege">Vegetarian</a>
+            <a href="#japadog">Japadog</a>
+
+            <a href="login.html">Login</a>
+            <a href="cart.html">Cart</a>
+            <div class="search-container">
+                <form action="search.html">
+                    <input type="text" placeholder="Search.." name="search" id="searchText">
+                    <button type="button" onClick="goSearch()" id="searching"><img class="" src=""></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="empty">
+    </section>
+
+    <section id="seafood">
+        <h3>Seafood Takoyaki</h3>
+        <p>Choose your fillings!</p>
+        <div class="container">
+            <div class="sub-container">
+                <div class="item-top">
+                    <a style="text-decoration:none" href="product.html?octupos">
+                        <img class="item" 
+                        src="menu-img\takoyaki-octupos1.jpg" alt="octupos takoyaki">
+                        <p>Octupos 10</p>
+                    </a>
+
+                    <input type="submit" value="Add to order">
+                </div>
+    
+                <div class="item-bottom">
+                    <a style="text-decoration:none" href="product.html?shrimp">
+                        <img class="item"
+                        src="menu-img\takoyaki-shrimp.jpg" alt="Shrimp takoyaki">
+                        <p>Shrimp 12</p>
+                    </a>
+                    
+                    <input type="submit" value="Add to order">
+                </div>
+            </div>
+
+            <div class="sub-container">
+                <div class="item-top">
+                    <a style="text-decoration:none" href="product.html?crab">
+                        <img class="item"
+                        src="menu-img\takoyaki-crab.jpg" alt="Crab takoyaki">
+                        <p>Crab 13</p>
+                    </a>
+                    
+                    <input type="submit" value="Add to order">
+                </div>
+    
+                <div class="item-bottom">
+                    <a style="text-decoration:none" href="product.html?seafood">
+                        <img class="item"
+                        src="menu-img\takoyaki-menu5.jpg" alt="Seafood mix takoyaki">
+                        <p>Seafood mix 15</p>
+                    </a>
+                    
+                    <input type="submit" value="Add to order">
+                </div>
+            </div>
+
+            <div class="sub-container">
+                <div class="item-top">
+                    <a style="text-decoration:none" href="product.html?squid">
+                        <img class="item"
+                        src="menu-img\takoyaki-squid.jpg" alt="Squid takoyaki">
+                        <p>Squid 9</p>
+                    </a>
+                    
+                    <input type="submit" value="Add to order">
+                </div>
+    
+                <div class="item-bottom">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vege">
+        <h3>Vegetarian Takoyaki</h3>
+        <p>Choose your fillings!</p>
+        <div class="container">
+            <div class="veggie-kimchi">
+                <a style="text-decoration:none" href="product.html?kimchi">
+                    <img class="item"
+                         src="menu-img\takoyaki-kimchi.jpg" alt="Kimchi takoyaki">
+                    <p>Kimchi 6</p>
+                </a>
+                <input type="submit" value="Add to order">
+                
+            </div>
+
+            <div class="veggie-cheese">
+                <a style="text-decoration:none" href="product.html?cheese">
+                    <img class="item"
+                         src="menu-img\takoyaki-cheese.jpg" alt="Cheese takoyaki">
+                    <p>Cheese 11</p>
+                </a>
+                <input type="submit" value="Add to order">
+                
+            </div>
+
+            <div class="veggie-mix">
+                <a style="text-decoration:none" href="product.html?vege">
+                    <img class="item"
+                         src="menu-img\takoyaki-menu8.jpg" alt="Veggie mix takoyaki">
+                    <p>Veggie mix 15</p>
+                </a>
+                <input type="submit" value="Add to order">
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section id="japadog">
+        <h3>Try our Japadog!</h3>
+        <p>Japanese hotdog combos!<br>comes with our signature seaweed fries and a drink!</p>
+        <div class="container">
+            <div class="sub-container">
+                <div class="item-top">
+                    <a style="text-decoration:none" href="product.html?classic">
+                        <img class="item"
+                             src="img-japadog/japadog.jpg" alt="Classic japadog">
+                        <p>Classic 5</p>
+                    </a>
+                        <p class="caption">
+                            Our signature Japanese style hotdog made with our <br>
+                            sweet Japanese sauce, mayo, yaki nori and menegi
+                        </p>
+                        <input type="submit" value="Add to order">
+                </div>
+    
+                <div class="item-bottom">
+                    <a style="text-decoration:none" href="product.html?ebi">
+                        <img class="item"
+                             src="img-japadog/japadog-1.jpg" alt="Ebi japadog">
+                        <p>Ebi 9</p>
+                    </a>
+                        <p class="caption">
+                            Our juicy beef hotdog and crispy shrimp tempura together<br>
+                            with our Japanese style toppings create a perfect savoury taste
+                        </p>
+                        <input type="submit" value="Add to order">
+                </div>
+            </div>
+
+            <div class="sub-container">
+                <div class="item-top">
+                    <a style="text-decoration:none" href="product.html?kani">
+                        <img class="item"
+                             src="img-japadog/japadog-2.jpg" alt="Kani japadog">
+                        <p>Kani 13</p>
+                    </a>
+                        <p class="caption">
+                            One of the fsvourites of many - A creamy satisfying flavour of our<br>
+                            shredded crab mixed with spicy sauce makes for an unforgettable taste
+                        </p>
+                        <input type="submit" value="Add to order">
+                </div>
+    
+                <div class="item-bottom">
+                    <a style="text-decoration:none" href="product.html?cheeseDog">
+                        <img class="item"
+                             src="img-japadog/japadog-3.jpg" alt="Cheese japadog">
+                        <p>Chesse 8</p>
+                    </a>
+                        <p class="caption">
+                            Overloaded with cheese on the outside and cheese on the inside<br>
+                            topped with bonito flakes that create a mouthwatering texture
+                        </p>
+                        <input type="submit" value="Add to order">
+                </div>
+            </div>
+
+            <div class="sub-container">
+                <div class="item-top">
+                    <a style="text-decoration:none" href="product.html?cheese-spicy">
+                        <img class="item"
+                             src="img-japadog/japadog-4.jpg" alt="Spicy cheese japadog">
+                        <p>Spicy Cheese 12</p>
+                    </a>
+                        <p class="caption">
+                            Made with our signature Japanese cheese hotdog<br>
+                            with spicy sauce for a whole new experience
+                        </p>
+                        <input type="submit" value="Add to order">
+                </div>
+    
+                <div class="item-bottom">
+                    <br>
+                    <br>
+                    <br>
+                    <h4>Extra seaweed fries? Yes!</h4>
+                    <p>Small 4</p>
+                    <br>
+                    <p>Large 6</p>
+                    <br>
+                    <br>
+                    <p>Vegetarian hotdogs are available upon request.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="link">
+        <div class="link">
+            <br />
+            <br />
+            <h3>Follow us!</h3>
+            <div class="row contact">
+                <div class="icon">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                    <a href="https://www.instagram.com/takoyakitogo/"><img src="img\insta.jpg" id="insta" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+</body>
+</html>

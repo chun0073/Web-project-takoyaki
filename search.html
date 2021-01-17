@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Takoyaki Go</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_search.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="searchBar.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <!--navigate bar-->
+    <section id="top-nav">
+        <div class="topnav">
+            <a class="active" href="index.html">Takoyaki Go</a>
+
+            <a href="order.php">Menu</a>
+
+            <a href="login.html">Login</a>
+            <a href="cart.html">Cart</a>
+            <div class="search-container">
+                <form action="search.html">
+                    <input type="text" placeholder="Search.." name="search" id="searchText">
+                    <button type="button" onClick="goSearch()" id="searching"><img class="" src=""></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="empty">
+        <div id="searchWrapper">
+            <form>
+                <input type="text" name="searchBar2" id="searchBar2" spellcheck="false" placeholder="Search for foods" />
+                <i class="material-icons" onclick="goSearch2()">search</i>
+            </form>
+        </div>
+        <!--Sort button-->
+        <div class="sort">
+            <div class="dropdown">
+                <button onclick="sort()" class="dropbtn">Sort</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="javascript:sortFlag('p_Price DESC');">High Price</a>
+                    <a href="javascript:sortFlag('p_Price ASC');">Low Price</a>
+                    <a href="javascript:sortFlag('p_Rating DESC');">High Rating</a>
+                    <a href="javascript:sortFlag('p_Rating ASC');">Low Rating</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Max Price filtering-->
+    <section id="range">
+        <div class="slideContainer">
+            <p>Max Price&nbsp;&nbsp;&nbsp;&nbsp;<span id="demo"></span></p>
+            <input type="range" min="5" max="15" value="15" class="slider" id="priceRange" />
+        </div>
+        <script>
+            var slider = document.getElementById("priceRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value + "$";
+            slider.oninput = function () {
+                output.innerHTML = this.value + "$";
+                filterPrice(this.value);
+            }
+        </script>
+
+        <div class="slideContainer1">
+            <p>Max Rating&nbsp;&nbsp;&nbsp;&nbsp;<span id="demo1"></span></p>
+            <input type="range" min="0" max="5" value="5" class="slider1" id="ratingRange" />
+        </div>
+        <script>
+            var slider1 = document.getElementById("ratingRange");
+            var output1 = document.getElementById("demo1");
+            output1.innerHTML = slider1.value + "⭐";
+            slider1.oninput = function () {
+                output1.innerHTML = this.value + "⭐";
+                filterRating(this.value);
+            }
+        </script>
+
+    </section>
+    <!--Result-->
+    <section onload="main()" id="searchResult">
+        <div class="result">
+            <h3 id="warning"></h3>
+            <ul id="foods"></ul>
+
+        </div>
+    </section>
+
+    <!--Link-->
+    <section id="link">
+        <div class="container">
+            <br />
+            <br />
+            <h3>Follow us!</h3>
+            <a href="https://www.instagram.com/takoyakitogo/"><img src="img\insta.jpg" id="insta" /></a>
+        </div>
+    </section>
+    <!--Footer-->
+    <section id="footer">
+        <div class="container">
+        </div>
+    </section>
+    <script src="searchPage.js"></script>
+</body>
+</html>

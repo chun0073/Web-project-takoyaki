@@ -1,0 +1,160 @@
+#empty {
+    align-items: center;
+    text-align: center;
+    height: 8vh;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+#seafood {
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+#vege {
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+#japadog {
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0px;
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sub-container{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+
+.item-top{
+    background-color: #f0e8e0;
+    height: 80vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.item-bottom{
+    background-color: #f0e8e0;
+    height: 70vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.veggie-kimchi{
+    background-color: #f0e8e0;
+    height: 60vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.veggie-cheese{
+    background-color: #f0e8e0;
+    height: 60vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.veggie-mix{
+    background-color: #f0e8e0;
+    height: 60vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.item-top:hover{
+    background-color: #fcfaf8;
+    height: 60vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.item-bottom:hover{
+    background-color: #fcfaf8;
+    height: 60vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.veggie-kimchi:hover{
+    background-color: #fcfaf8;
+    height: 60vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.veggie-cheese:hover{
+    background-color: #fcfaf8;
+    height: 60vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.veggie-mix:hover{
+    background-color: #fcfaf8;
+    height: 60vh;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+img.item{
+    border: 0%;
+    padding: 0%;
+    margin-top: 40px;
+
+    height: 275px;
+    width: 260px;
+}
+    
+
+.col-item{
+    margin-top: 150px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-detail{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.caption{
+    font-size: 15px;
+    margin-top: 0px;
+}

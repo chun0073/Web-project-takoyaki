@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <title>Takoyaki Go</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_signup.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="searchBar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <section id="top-nav">
+        <div class="topnav">
+            <a class="active" href="index.html#home">Takoyaki Go</a>
+            <a href="index.html#about">About</a>
+            <a href="order.php">Menu</a>
+            <a href="index.html#promotion">Promotion</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html">Cart</a>
+            <div class="search-container">
+                <form action="search.html">
+                    <input type="text" placeholder="Search.." name="search" id="searchText">
+                    <button type="button" onClick="goSearch()" id="searching"><img class="" src=""></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="empty">
+        <div id="emptyid">
+            <h2>Create your ID</h2>
+        </div>
+    </section>
+    <!--Login Page-->
+    <section id="signup">
+        <div class="signup-form">
+            <form action="signup.php" method="post">
+                <fieldset>
+                    <span id="names">
+                        <label for="firstName"></label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                        <label for="lastName"></label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                        <label for="Email"></label>
+                        <input type="text" id="Email" name="Email" placeholder="Email">
+                        <label for="Country"></label>
+                        <input list="country_list" id="Country" name="Country" placeholder="Country">
+                        <datalist id="country_list">
+                            <option value="Canada">
+                            <option value="USA">
+                            <option value="France">
+                            <option value="Mexico">
+                        </datalist>
+                        <label for="Address"></label>
+                        <input type="text" id="Address" name="Address" placeholder="Address">
+                        <label for="postalcode"></label>
+                        <input type="text" id="postalcode" name="postalcode" placeholder="Postal Code">
+                        <label for="id"></label>
+                        <input type="text" id="id" name="id" placeholder="Your ID">
+                        <label for="passwd"></label>
+                        <input type="text" id="passwd" name="passwd" placeholder="Password">
+                    </span>
+                    <button id="signupbt" class="btn" onclick="">CREATE</button>
+                </fieldset>
+            </form>
+        </div>
+      
+    </section>
+    <section id="link">
+        <div class="container">
+            <br />
+            <br />
+            <h3>Ask Us!</h3>
+            <a href="https://www.instagram.com/takoyakitogo/"><img src="img\insta.jpg" id="insta" /></a>
+        </div>
+    </section>
+
+</body>
+</html>

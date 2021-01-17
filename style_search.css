@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+.searchBar{
+    grid-area:auto;
+}
+#empty {
+
+    display:grid;
+    grid-template-columns:90% auto;
+    margin:auto;
+    margin-top:50px;
+    width:80%;
+    height: auto;
+}
+#searchWrapper {
+    position:relative;
+    margin:auto;
+    text-align:center;
+    vertical-align:central;
+}
+    #searchWrapper i {
+        font-size:40px;
+        border-radius:15px;
+    }
+    #searchWrapper i:hover {
+        background-color:orange;
+    }
+#searchBar2 {
+    width:600px;
+    height:40px;
+    margin-top:100px;
+    font-size: 16px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#myInput {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    margin-bottom: 12px;
+    margin-top: 100px;
+}
+
+.dropbtn {
+    width:100px;
+    height:40px;
+    margin-top:100px;
+    background: #f8ce9e;
+    color: black;
+    
+    font-size: 16px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #ff6a00;
+    }
+
+#my{
+    display:none;
+}
+.sort{
+    text-align:left;
+    grid-area:auto;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 150px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+.dropdown a:hover {
+    background-color: #ff6a00;
+}
+
+.show {
+    display: block;
+}
+.result {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+#warning {
+    text-align:left;
+}
+#foods {
+    padding-left:0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.food {
+    list-style-type: none;
+    background-color: #fcedcd;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        'name image' 
+        'ingredient image'  
+        'rating image'
+        'price image';
+    text-align: left;
+}
+    .food > h2 {
+        grid-area: name;
+        margin-bottom: 0px;
+    }
+
+    .food > #ing {
+        grid-area: ingredient;
+        margin-top: -60px;
+    }
+    .food > #rating {
+        grid-area: rating;
+        margin-top: -20px;
+    }
+    .food > #price {
+        grid-area: price;
+        margin-top: -10px;
+    }
+    #search-img {
+        grid-area: image;
+        height: 120px;
+        width: 120px;
+    }
+#range {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;   
+}
+.slideContainer {
+    width: 100%; /* Width of the outside container */
+}
+.slider {
+    margin: 0 auto;
+    width:50%;
+    max-width: 500px;
+    text-align: left;
+    height: 15px; /* Specified height */
+    outline: none;
+    opacity: 0.7;
+    
+    transition: opacity .2s;
+}
+.slider:hover{
+    opacity: 1;
+}
+
+.slideContainer1 {
+    width: 100%; /* Width of the outside container */
+}
+
+.slider1 {
+    margin: 0 auto;
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+    height: 15px; /* Specified height */
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+    .slider1:hover {
+        opacity: 1;
+    }

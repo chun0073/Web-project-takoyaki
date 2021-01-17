@@ -1,0 +1,69 @@
+
+#empty {
+    
+    height: 20vh;
+}
+#login {
+    
+    display: table;
+    margin: auto;
+    height: 30vh;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#loginbt{
+    margin-top:50px;
+    width:100px;
+    height:25px;
+}
+#signupbt {
+    margin-top: 5px;
+    width: 100px;
+    height: 25px;
+}
+    #signupbt:hover {
+        color: black;
+        background-color: #df5e27;
+    }
+#loginbt:hover{
+    color:black;
+    background-color:#df5e27;
+}
+#login-form{
+    
+}
+
+fieldset{
+    width:200px;
+    height:300px;
+    display:table;
+    align-content:center;
+    align-items:center;
+    text-align:center;
+    
+}
+
+#login-ID{
+    width:150px;
+    height:25px;
+    margin-top:25px;
+}
+#login-ID:hover{
+    background-color:#ff6a00;
+}
+#login-pw {
+    width: 150px;
+    height: 25px;
+    margin-top: 25px;
+}
+    #login-pw:hover {
+        background-color: #ff6a00;
+    }
+label {
+    display:table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+}

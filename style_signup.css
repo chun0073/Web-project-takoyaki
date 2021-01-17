@@ -1,0 +1,74 @@
+#empty {
+    margin-top: 100px;
+    height: 15vh;
+    text-align: center;
+    vertical-align:central;
+}
+#signup {
+    display:table;
+    margin:auto;
+    height:50vh;
+    background-color: white;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#signupbt {
+    margin-top: 5px;
+    width: 100px;
+    height: 25px;
+}
+    #signupbt:hover {
+        color: black;
+        background-color: #df5e27;
+    }
+fieldset{
+    width:200px;
+    height:400px;
+    text-align:center;
+}
+#names {
+    width: 200px;
+    height: 300px;
+}
+label {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold; 
+}
+input {
+    text-align:center;
+}
+#firstName:hover {
+    color: white;
+    background-color: #df5e27;
+}
+#lastName:hover {
+    color: white;
+    background-color: #df5e27;
+}
+#Email:hover {
+    color: white;
+    background-color: #df5e27;
+}
+#Country:hover {
+    color: white;
+    background-color: #df5e27;
+}
+#Address:hover {
+    color: white;
+    background-color: #df5e27;
+}
+#postalcode:hover {
+    color: white;
+    background-color: #df5e27;
+}
+#id:hover {
+    color: white;
+    background-color: #df5e27;
+}
+#passwd:hover {
+    color: white;
+    background-color: #df5e27;
+}

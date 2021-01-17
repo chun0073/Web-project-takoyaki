@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <title>Takoyaki Go</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_cart.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="searchBar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <section id="top-nav">
+        <div class="topnav">
+            <a class="active" href="index.html">Takoyaki Go</a>
+
+            <a href="order.php">Menu</a>
+
+            <a href="login.html">Login</a>
+            <a href="cart.html">Cart</a>
+            <div class="search-container">
+                <form action="search.html">
+                    <input type="text" placeholder="Search.." name="search" id="searchText">
+                    <button type="button" onClick="goSearch()" id="searching"><img class="" src=""></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="empty">
+    </section>
+
+    <section class="cart">
+        <div class="cart-container">
+            <div class="orders">
+                <p class="header">Order list</p>
+                <div class="cart-list">
+                    <img class="img-orders" src="menu-img\takoyaki-crab.jpg">
+                    <label for="orders">Takoyaki Crab   13</label>
+                </div>
+
+                <div class="cart-list">
+                    <img class="img-orders" src="menu-img\takoyaki-kimchi.jpg">
+                    <label for="orders">Takoyaki Kimchi  13</label>
+                </div>
+
+                <div class="cart-list">
+                    <img class="img-orders" src="img-japadog/japadog-1.jpg">
+                    <label for="orders">Ebi 11</label>
+                </div>
+            </div>
+
+            <div class="total">
+                <p class="header">Totals</p>
+                <div class="total-top">
+                    <form>
+                        <label for="Labels">Subtotal: </label>
+                        <label for="Sub-amount">..........37</label><br>
+
+                        <label for="Labels">HST/GST: </label>
+                        <label for="Sub-amount">..........4.81</label><br><br><br><br>
+
+                        <label for="Labels">Total: </label>
+                        <label for="Sub-amount">..............$41.81</label><br><br>
+
+                        <input type="submit" value="Place order">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="link">
+        <div class="link">
+            <br />
+            <br />
+            <h3>Follow us!</h3>
+            <div class="row contact">
+                <div class="icon">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                    <a href="https://www.instagram.com/takoyakitogo/"><img src="img\insta.jpg" id="insta" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
